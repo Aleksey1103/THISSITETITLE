@@ -1,0 +1,36 @@
+.modal-content
+    max-width: 400px
+    padding: 33px 39px 20px
+    background-color: $whiteColor
+    .close
+        position: absolute
+        top: 0px
+        right: -50px
+        width: 30px
+        height: 30px
+        &::after, &::before
+            content: " "
+            position: absolute
+            top: calc(50% - 1px)
+            left: 0
+            width: 93%
+            height: 2px
+            background-color: $whiteColor
+        &::after
+            transform: rotate(45deg)
+        &::before
+            transform: rotate(-45deg)
+
+    &__heading
+        margin-bottom: 29px
+        max-width: 265px
+        line-height: 1.4
+
+    .common-input
+        margin-bottom: 20px
+
+    .btn
+        margin-bottom: 35px
+
+    &__link
+        margin-bottom: 28px

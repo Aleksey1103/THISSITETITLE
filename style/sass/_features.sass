@@ -1,0 +1,87 @@
+.features
+    &-head
+        position: relative 
+        padding: 44px 0 5px
+        &__item
+            padding: 4px 17px
+            font-size: 18px
+        &__link
+            font-size: inherit
+
+    &-block
+        padding: 75px 0 74px
+        border-bottom: 1px solid $blockBorderColor
+        &_main
+            padding-bottom: 0
+            border-bottom: none
+        &_special
+            padding-top: 0
+            padding-bottom: 67px
+
+        &__control
+            display: flex
+            width: 100%
+            align-items: center
+            background-color: transparent
+            border: none
+            font-size: 18px
+            color: $accentColor
+            &::before
+                content: ""
+                display: block
+                width: 40px
+                height: 40px
+                margin-left: 13px
+                margin-right: 16px
+                background: url(/img/icon-sprite.png) no-repeat 0 0
+            &::after
+                content: ""
+                display: block
+                width: 10px
+                height: 9px
+                margin-left: auto
+                margin-right: 5px
+                background: url(/img/triangle-sprite.png) no-repeat 0 -10px
+            &_2
+                &::before
+                    background-position: -40px 0
+            &_3
+                &::before
+                    background-position: -80px 0
+            &_4
+                &::before
+                    background-position: -120px 0
+            &_5
+                &::before
+                    background-position: -160px 0
+
+            &[aria-expanded="true"]
+                &::after
+                    background-position: 0 0
+        
+
+        &__heading
+            margin-bottom: 26px
+            &_link
+                margin-top: 33px
+                .link-underline
+                    color: #147ebe
+                    line-height: 1
+                    &::after
+                        bottom: 3px
+                        background-color: #147ebe
+                    &:hover
+                        color: #147ebe
+                        &::after
+                            background-color: transparent
+        &__desc
+            max-width: 620px
+            margin-bottom: 10px
+            padding-right: 10px
+        &__attention
+            margin: 35px 0 7px
+            font-size: 12px
+            font-weight: bold
+            letter-spacing: 1.9px
+            text-transform: uppercase
+            color: #d30531

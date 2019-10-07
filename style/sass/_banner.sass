@@ -1,0 +1,35 @@
+.banner
+    margin-top: 67px
+    padding: 94px 0 112px
+    background-image: url(../../img/banner-bg.png)
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+    &__section-heading
+        color: $fontWhite
+        text-shadow: 2px 0 5px rgba(0, 36, 69, .35)
+    &__text
+        margin-top: 11px
+        color: $fontWhite
+        opacity: .75
+
+    .search
+        &__input
+            position: relative
+        &__btn-loupe
+            position: absolute
+            top: 0
+            right: 3px
+            width: 48px
+            height: 100%
+            padding: 0
+            border: none
+            background-color: transparent
+            opacity: .7
+            transition: .3s
+            svg
+                width: 23px
+                height: 23px
+            &:hover
+                opacity: 1
+        

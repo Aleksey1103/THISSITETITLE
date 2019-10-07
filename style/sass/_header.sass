@@ -1,0 +1,105 @@
+.header
+    position: relative
+    max-width: 1280px
+    padding: 12px 20px
+    .btn-login
+        align-self: center
+        width: 100%
+        max-width: 92px
+        padding: 2px 0 6px
+        border: 2px solid $accentColor 
+        font-size: 15px          
+        transition: .3s
+    .logo
+        flex-basis: 80%
+        max-width: 350px        
+        height: 43px
+        svg
+            width: 293px
+    .btn-link
+        color: $accentColor
+        letter-spacing: -0.5px
+    .dropdown-menu
+        width: 238px
+        box-shadow: 0 0 9px rgba(70, 79, 87, .1)
+
+    .menu-wrapper
+        position: relative
+        width: 100%        
+        background-color: $whiteColor
+        padding: 10px 4px 4px
+        .romb
+            position: absolute
+            top: -7px
+            right: 23px
+            width: 15px
+            height: 15px            
+            transform: rotate(45deg)
+            background-color: inherit
+            box-shadow: 0 0 9px rgba(70, 79, 87, .1)
+            z-index: -1
+
+        .menu-item
+            display: block
+            padding: 8px 15px 9px
+            margin-bottom: 8px
+            font-size: 15px
+            color: $accentColor
+            text-decoration: underline
+            cursor: pointer
+            transition: .3s
+            &:hover
+                background-color: #e6ecf1
+
+    .icon-burger
+        display: flex
+        position: relative
+        flex-direction: column
+        justify-content: space-between
+        width: calc(19px * 1.5)
+        height: calc(15px * 1.5)
+        input 
+            display: none
+        .line 
+            display: block
+            width: 100%
+            height: 3px
+            background-color: $accentColor
+        #line1
+            position: absolute
+            right: 0
+            top: 0
+            transition: top .2s ease .2s, transform .2s ease 0s
+        #line2 
+            position: absolute
+            right: 0
+            top: 0
+            margin: auto 0
+            bottom: 0        
+        #line3
+            position: absolute
+            right: 0
+            bottom: 0
+            transition: bottom .2s ease .2s, transform .2s ease 0s
+        input:checked ~ #line1
+            top: calc(50% - 1.5px)
+            transform: rotate(-45deg)
+            transition: top .2s ease 0s, transform .2s ease .2s
+        input:checked ~ #line2
+            opacity: 0
+        input:checked ~ #line3
+            bottom: calc(50% - 1.5px)
+            transform: rotate(45deg)
+            transition: bottom .2s ease 0s, transform .2s ease .2s
+
+    .navbar-collapse
+        position: absolute
+        top: 100%
+        left: 0
+        width: 100%
+        z-index: 1000
+        .menu-item
+            max-width: 400px
+        .btn-login
+            padding: 11px 0
+            max-width: 400px

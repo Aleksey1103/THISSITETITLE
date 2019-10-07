@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="../img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="16x16" href="../img/favicons/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="../img/favicons/favicon-32x32.png" type="image/png">
+    <link rel="apple-touch-icon-precomposed" href="../img/favicons/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" href="../img/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="../img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="../img/favicons/apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicons/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="../img/favicons/apple-touch-icon-1024x1024.png">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="style/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style/css/animate.css">
+    <link rel="stylesheet" href="style/css/style.css">
+    <title>THISSITETITLE</title>
+</head>
+<body id="top">
+
+    <!-- Modal Window -->
+
+    <div class="modal fade" id="modalWindow" tabindex="-1" role="dialog" 
+         aria-hidden="true">
+
+        <div class="modal-dialog" role="document">
+            <div class="modal-content rounded-0 border-0 mx-auto">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+               <form action="#">
+                   <p class="modal-content__heading">Введите логин и пароль для входа в Личный кабинет</p>
+                   <input class="common-input" type="text" placeholder="Логин">
+                   <input class="common-input" type="password" placeholder="Пароль">
+                   <input class="btn btn-height60 btn-color_my_red rounded-0" type="submit" value="Войти">
+                   <a class="link-dotted modal-content__link" href="#">Забыли пароль?</a>
+                   <a class="link-dotted modal-content__link" href="#">Регистрация</a>
+               </form>
+           </div>
+        </div>
+    </div>
+
+    <!-- /Modal Window -->
+
+    <header class="fixed-top bg-white shadow-sm">
+
+        <div class="header mx-auto">
+            <div class="container-fluid px-0">
+                <nav class="nav-bar d-flex justify-content-between">
+
+                    <!-- Button LogIn -->
+                        
+                    <button type="button" class="btn-login btn btn-outline-color_accent d-none d-md-block rounded-0 mr-auto" 
+                        data-toggle="modal" data-target="#modalWindow">
+                        Войти
+                    </button>
+
+                    <!-- /Button LogIn -->
+                    <!-- Logo -->
+                
+                    <div class="logo d-flex align-items-center justify-content-md-center  justify-content-lg-start">
+                        <a href="index.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 293 44">
+                                <switch>
+                                    <g>
+                                        <g fill="#004686">
+                                            <path d="M58.186 33.098c-.189 0-.315-.125-.315-.315V17.769c0-.127-.063-.189-.188-.189h
+                                            -5.058c-.188 0-.315-.125-.315-.315v-5.214c0-.188.127-.313.315-.313h17.088c.188 
+                                            0 .315.125.315.313v5.214c0 .189-.127.315-.315.315h-5.058c-.125 0-.188.063
+                                            -.188.189v15.014c0 .189-.125.315-.315.315h-5.966zM74.913 12.052c0
+                                            -.188.125-.313.313-.313h5.968c.189 0 .315.125.315.313v7.068c0
+                                             .125.063.188.188.188h4.43c.125 0 .188-.063.188-.188v-7.068c0-.188.125
+                                             -.313.315-.313h5.967c.189 0 .315.125.315.313v20.732c0 .189-.125.315
+                                             -.315.315H86.63c-.189 0-.315-.125-.315-.315V25.34c0-.125-.063-.188
+                                             -.188-.188h-4.43c-.125 0-.188.063-.188.188v7.444c0 .189-.125.315-.315.315h-5.968c-.188 
+                                             0-.313-.125-.313-.315V12.052zM99.022 12.052c0-.188.125-.313.313-.313h5.968c.189 
+                                             0 .315.125.315.313v20.732c0 .189-.125.315-.315.315h-5.968c-.188 0-.313-.125-.313
+                                             -.315V12.052zM110.732 30.333c-.125-.125-.188-.376-.031-.565l3.329-3.926c.127-.157.283
+                                             -.157.409-.031 1.193 1.068 3.236 2.073 5.214 2.073 1.665 0 2.45-.535 2.45-1.382 0-.565
+                                             -.377-.911-2.01-1.131l-1.131-.157c-4.901-.692-7.508-2.858-7.508-7.068 0-4.051 3.236
+                                             -6.784 8.324-6.784 3.173 0 6.031.911 8.073 2.45.188.125.22.313.063.533l-2.828 4.021c
+                                             -.125.157-.283.189-.44.095-1.381-.911-2.984-1.54-4.617-1.54-1.257 0-1.822.503-1.822
+                                              1.162 0 .628.503.943 2.042 1.162l1.131.157c5.057.691 7.476 2.858 7.476 7.099 0 
+                                              4.051-3.173 6.974-9.141 6.974-3.674 0-7.349-1.477-8.983-3.142zM133.553 30.617c
+                                              -.125-.127-.188-.315-.063-.472l1.948-2.261c.125-.157.313-.157.44-.032 1.381 
+                                              1.1 3.424 2.262 5.811 2.262 2.544 0 4.021-1.288 4.021-3.08 0-1.538-.943-2.544
+                                              -3.895-2.952l-1.131-.157c-4.115-.565-6.44-2.545-6.44-6.094 0-3.865 2.828-6.44 
+                                              7.226-6.44 2.669 0 5.214.848 6.91 2.137.157.125.189.251.064.439l-1.508 2.325c
+                                              -.127.157-.283.188-.44.095-1.728-1.132-3.33-1.665-5.121-1.665-2.168 0-3.361 
+                                              1.193-3.361 2.858 0 1.477 1.036 2.482 3.926 2.89l1.131.157c4.115.565 6.378 
+                                              2.513 6.378 6.188 0 3.801-2.733 6.627-8.042 6.627-3.143.001-6.189-1.255-7.854
+                                              -2.825zM156.153 12.052c0-.188.125-.313.315-.313h3.078c.188 0 .315.125.315.313v20.732c0
+                                               .189-.127.315-.315.315h-3.078c-.189 0-.315-.125-.315-.315V12.052zM172.622 
+                                               33.098c-.188 0-.313-.125-.313-.315V15.255c0-.125-.064-.188-.189-.188h-5.591c
+                                               -.188 0-.315-.125-.315-.313v-2.702c0-.188.127-.313.315-.313h15.266c.189 
+                                               0 .315.125.315.313v2.702c0 .188-.125.313-.315.313h-5.591c-.125 0-.188.063
+                                               -.188.188v17.528c0 .189-.125.315-.315.315h-3.079zM188.499 12.052c0-.188.125
+                                               -.313.315-.313h13.381c.189 0 .315.125.315.313v2.702c0 .188-.125.313-.315.313h
+                                               -9.8c-.125 0-.188.063-.188.188v5.215c0 .125.063.188.188.188h8.261c.188 
+                                               0 .315.127.315.315v2.701c0 .189-.127.315-.315.315h-8.261c-.125 0-.188.063-.188.188v5.403c0
+                                                .125.063.188.188.188h9.8c.189 0 .315.127.315.315v2.701c0 .189-.125.315-.315.315h-13.381c
+                                                -.189 0-.315-.125-.315-.315V12.052zM215.685 33.098c-.188 0-.313-.125-.313-.315V12.837c0
+                                                -.125-.064-.188-.189-.188h-6.376c-.188 0-.315-.125-.315-.315v-.283c0-.188.127-.313.315
+                                                -.313h14.105c.188 0 .313.125.313.313v.283c0 .189-.125.315-.313.315h-6.378c-.125 
+                                                0-.188.063-.188.188v19.946c0 .189-.125.315-.315.315h-.346zM230.521 12.052c0-.188.127
+                                                -.313.315-.313h.345c.189 0 .315.125.315.313v20.732c0 .189-.125.315-.315.315h-.345c
+                                                -.188 0-.315-.125-.315-.315V12.052zM245.935 33.098c-.188 0-.313-.125-.313-.315V12.837c0
+                                                -.125-.064-.188-.189-.188h-6.376c-.188 0-.315-.125-.315-.315v-.283c0-.188.127-.313.315
+                                                -.313h14.105c.188 0 .313.125.313.313v.283c0 .189-.125.315-.313.315h-6.378c-.125 0-.188.063
+                                                -.188.188v19.946c0 .189-.125.315-.315.315h-.346zM260.771 12.052c0-.188.127-.313.315-.313h.345c.189
+                                                 0 .315.125.315.313v19.946c0 .127.063.189.188.189h10.9c.189 0 .315.125.315.313v.283c0
+                                                  .189-.125.315-.315.315h-11.748c-.188 0-.315-.125-.315-.315V12.052zM280.54 12.052c0-.188.127
+                                                  -.313.315-.313h11.748c.189 0 .315.125.315.313v.283c0 .189-.125.315-.315.315h-10.9c-.125 
+                                                  0-.188.063-.188.188v8.764c0 .125.063.189.188.189h9.424c.188 0 .315.125.315.313v.283c0 .189
+                                                  -.127.315-.315.315h-9.424c-.125 0-.188.063-.188.188v9.109c0 .127.063.189.188.189h10.9c.189 
+                                                  0 .315.125.315.313v.283c0 .189-.125.315-.315.315h-11.748c-.188 0-.315-.125-.315-.315V12.052z"/>
+                                        </g>
+                                        <path fill="#579ddc" d="M11.265.238L35.87 11.421 24.686 36.025.082 24.842z"/>
+                                        <path fill="#004686" d="M19.193 5.542l19.11 19.11-19.11 19.109L.083 24.65z"/>
+                                        <circle cx="24.639" cy="19.206" r="2.183" fill="#fff"/>
+                                    </g>
+                                </switch>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <!-- /Logo -->
+                    <!-- Menu Help -->
+                
+                    <button type="button" class="btn-link btn d-none d-md-block px-0 ml-auto"
+                        id="dropdownMenu1" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Помощь
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right rounded-0 border-0 p-0">
+                        <div class="menu-wrapper my-0">
+                            <div class="romb"></div>
+                            <a href="#featuresHead" class="menu-item">Как это работает</a>
+                            <a href="#" class="menu-item">Вопрос-ответ</a>                            
+                            <a href="#" class="menu-item">Служба поддержки</a>                            
+                        </div>
+                    </div>
+                
+                    <!-- /Menu Help -->
+                    <!-- Navbar Collapse -->
+
+                    <button class="navbar-toggler d-md-none align-self-center p-0 border-0 ml-auto" type="button" data-toggle="collapse" 
+                        data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" 
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <label class="icon-burger m-0" for="hiddenCheckBox">
+                            <input type="checkbox" id="hiddenCheckBox">
+                            <span class='line' id='line1'></span>
+                            <span class='line' id='line2'></span>
+                            <span class='line' id='line3'></span>
+                        </label>                        
+                    </button>                            
+                    <div class="collapse navbar-collapse shadow" id="navbarNavAltMarkup">
+                        <div class="menu-wrapper my-0">
+                            <a href="#featuresHead" class="menu-item mx-auto">Как это работает</a>
+                            <a href="#" class="menu-item mx-auto">Вопрос-ответ</a>                            
+                            <a href="#" class="menu-item mx-auto">Служба поддержки</a>
+                            <button type="button" 
+                                class="btn-login btn btn-outline-color_accent d-block d-md-none rounded-0 mx-auto" 
+                                data-toggle="modal"
+                                data-target="#modalWindow">
+                                Войти
+                            </button>                           
+                        </div>
+                    </div>  
+                    
+                    <!-- /Navbar Collapse -->
+                   
+                </nav>
+            </div>
+        </div>
+
+    </header>
+
+    <section class="banner">
+
+        <div class="container">            
+            <form class="search" action="#">
+
+                <div class="row px-3 px-sm-0">                    
+                    <h1 class="section-heading banner__section-heading col-12 px-sm-4 text-center text-md-left wow fadeInDown">Поиск начислений</h1>                    
+                    <div class="search__input col-sm-9 col-lg-10 pl-sm-4">
+                        <input class="common-input border-0 wow fadeInUp" type="search" placeholder="Введите данные для поиска">
+                        <button class="search__btn-loupe d-sm-none" type="submit">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 23">
+                                <switch>
+                                    <g>
+                                        <path d="M22.547 19.799l-5.297-5.297c-.156-.156-.32-.234-.492-.234a.496.496 
+                                        0 00-.422.234l-1.289-1.312c1.125-1.437 1.688-3.07 1.688-4.898a7.907 7.907 0 
+                                        00-1.066-4.008 7.813 7.813 0 00-2.918-2.918A7.891 7.891 0 008.743.3a7.901 7.901 
+                                        0 00-4.008 1.066 7.806 7.806 0 00-2.919 2.917A7.897 7.897 0 00.75 8.291c0 
+                                        1.438.355 2.774 1.066 4.008a7.806 7.806 0 002.918 2.918 7.891 7.891 0 004.008 
+                                        1.066c1.828 0 3.461-.563 4.898-1.688l1.313 1.289a.846.846 0 
+                                        00-.164.492c0 .172.055.313.164.422l5.297 5.297a.661.661 0 00.48.211c.179 
+                                        0 .316-.07.41-.211l1.406-1.406c.141-.094.211-.242.211-.445.001-.203-.069
+                                        -.351-.21-.445zm-9.563-7.266c-1.172 1.172-2.586 1.758-4.242 1.758-1.656 
+                                        0-3.07-.586-4.242-1.758-1.172-1.172-1.758-2.586-1.758-4.242 
+                                        0-1.656.586-3.07 1.758-4.242 1.172-1.172 2.586-1.758 4.242-1.758 1.656 
+                                        0 3.07.586 4.242 1.758 1.172 1.172 1.758 2.586 1.758 4.242 0 1.657-.586 
+                                        3.071-1.758 4.242z" fill-rule="evenodd" clip-rule="evenodd" fill="#0777ba"/>
+                                    </g>
+                                </switch>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="search__btn d-none d-sm-block col-sm-3 col-lg-2 pr-sm-4 wow fadeInUp">
+                        <button class="btn btn-height60 btn-color_my_red rounded-0" type="submit">Найти</button>
+                    </div>
+
+                    <p class="banner__text col d-none d-sm-block px-sm-4 mb-0 text-center text-md-left wow fadeInUp" data-wow-delay="0.4s">
+                        Чем больше параметров введено, тем полнее результаты&nbsp;поиска
+                    </p> 
+
+                </div>
+            </form>
+        </div>
+
+    </section>
+
+    <section class="features">
+
+        <!-- Features Head -->
+
+        <div class="container">            
+            <div class="features-head" id="featuresHead">
+                <div class="row">
+                    <h2 class="section-heading col-12 text-center d-none d-sm-block wow fadeInDown">Здесь можно оплатить</h2>
+                    <h2 class="section-heading d-sm-none col-12 text-center mb-0">Узнайте как оплатить</h2>
+                    <ul class="features-head__list d-none d-sm-flex flex-wrap justify-content-center list-unstyled col-12 col-lg-9 mb-0 mx-auto wow fadeInUp">
+                        <li class="features-head__item"><a href="#featuresBlock_1" class="features-head__link link-dotted">Штрафы и пошлины ГИБДД</a></li>
+                        <li class="features-head__item"><a href="#featuresBlock_3" class="features-head__link link-dotted">Судебные задолженности</a></li>
+                        <li class="features-head__item"><a href="#featuresBlock_4" class="features-head__link link-dotted">Налоги</a></li>
+                        <li class="features-head__item"><a href="#featuresBlock_5" class="features-head__link link-dotted">Услуги Росреестра</a></li>
+                        <li class="features-head__item">и другие услуги</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div> 
+
+        
+
+        <!-- /Features Head -->
+        <!-- Features Block 1 (Main) -->
+            
+        <div class="features-block features-block_main">
+            <div class="container">
+                <p class="d-sm-none mb-0">
+                    <button class="features-block__control features-block__control_1" type="button" data-toggle="collapse" data-target="#featuresBlock_1" aria-expanded="false" >
+                        <span class="link-dotted">Штрафы ГИБДД</span>
+                    </button>
+                </p>
+                <div class="features-block-content row px-3 px-sm-0 " id="featuresBlock_1">
+                    <div class="features-block__text col-md-8 pl-md-4 wow fadeInUp">
+                        <h3 class="block-heading features-block__heading d-none d-sm-block">Штрафы ГИБДД</h3>
+                        <p class="features-block__desc">
+                            Для поиска укажите номера водительского удостоверения и свидетельства 
+                            о регистрации ТС или номер штрафа.
+                        </p>
+                        <p class="features-block__desc">
+                            Если у вас есть на руках постановление о штрафе,
+                            вы можете указать реквизиты самостоятельно.
+                        </p>
+                        <h4 class="features-block__attention">платить Вовремя — дешевле!</h4>
+                        <p class="features-block__desc mb-0">
+                            В первые 20 дней после выдачи постановления штраф можно оплатить 
+                            со скидкой 50%.  Для своевременной оплаты штрафов настройте уведомления
+                            в Личном кабинете.
+                        </p>
+                    </div>
+                    <div class="features-block__img d-none d-md-block col-md-4 pr-md-4 wow fadeInUp" data-wow-delay="0.2s" >
+                        <img src="img/img-1.png" alt="img1" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- /Features Block 1 (Main) -->
+        <!-- Features Block 2 (Special) -->
+        
+        <div class="features-block features-block_special">
+            <div class="container">
+                <p class="d-sm-none mb-0">
+                    <button class="features-block__control features-block__control_2" type="button" data-toggle="collapse" data-target="#featuresBlock_2" aria-expanded="false" >
+                        <span class="link-dotted">Пошлины ГИБДД</span>
+                    </button>
+                </p>
+                <div class="features-block-content row px-3 px-sm-0 wow fadeInUp" id="featuresBlock_2">
+                    <div class="features-block__text col-md-8 pl-md-4">
+                        <h3 class="block-heading features-block__heading features-block__heading_link d-none d-sm-block">
+                            <a href="#" class="link-underline">Пошлины ГИБДД</a>
+                        </h3>
+                        <p class="features-block__desc mb-0">
+                            Перейдите по ссылке и укажите вид пошлины и отделение ГИБДД,
+                            предоставляющее вам услугу.
+                        </p>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+
+        <!-- /Features Block 2 (Special) -->
+        <!-- Features Block 3 -->
+        
+        <div class="features-block">
+            <div class="container">
+                <p class="d-sm-none mb-0">
+                    <button class="features-block__control features-block__control_3" type="button" data-toggle="collapse" data-target="#featuresBlock_3" aria-expanded="false" >
+                        <span class="link-dotted">Судебные задолженности</span>
+                    </button>
+                </p>
+                <div class="features-block-content row px-3 px-sm-0" id="featuresBlock_3">
+                    <div class="features-block__img d-none d-md-block col-md-4 pl-md-4  wow fadeInUp" data-wow-delay="0.2s" >
+                        <img src="img/img-2.png" alt="img2" class="img-fluid">
+                    </div>
+                    <div class="features-block__text col-md-8 pl-md-5 wow fadeInUp" >
+                        <h3 class="block-heading features-block__heading d-none d-sm-block">Судебные задолженности</h3>
+                        <p class="features-block__desc">
+                            Для поиска начислений в ГИС ГМП укажите документы:<br> 
+                            паспорт РФ, ИНН, СНИЛС или номер Исполнительного производства.
+                        </p>
+                        <p class="features-block__desc">
+                            Вы можете указать реквизиты платежа самостоятельно, заполнив форму.<br><br>
+                        </p>
+                        <h4 class="features-block__attention">Удобно!</h4>
+                        <p class="features-block__desc mb-0">
+                            Судебные задолженности можно погасить как сразу, так и по частям, 
+                            комфортными для вас платежами. Информацию о совершенных платежах 
+                            сохраняйте в Личном кабинете.
+                        </p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- /Features Block 3 -->
+        <!-- Features Block 4 -->
+
+        <div class="features-block">
+            <div class="container">
+                <p class="d-sm-none mb-0">
+                    <button class="features-block__control features-block__control_4" type="button" data-toggle="collapse" data-target="#featuresBlock_4" aria-expanded="false" >
+                        <span class="link-dotted">Налоги</span>
+                    </button>
+                </p>
+                <div class="features-block-content row px-3 px-sm-0" id="featuresBlock_4">
+                    <div class="features-block__text col-md-8 pl-md-4 wow fadeInUp" >
+                        <h3 class="block-heading features-block__heading d-none d-sm-block">Налоги</h3>
+                        <p class="features-block__desc">
+                            Для поиска начислений по налогам в ГИС ГМП укажите ИНН или
+                            Индекс налогового документа, усли у вас на руках есть квитанция.                                    
+                        </p>
+                        <h4 class="features-block__attention">Важно!</h4>
+                        <p class="features-block__desc mb-0">
+                            Согласно законодательству РФ вы не можете оплачивать налоги 
+                            за других физических лиц. Принимаются только платежи физических лиц.
+                        </p>
+                    </div>
+                    <div class="features-block__img d-none d-md-block col-md-4 pr-md-4 wow fadeInUp" data-wow-delay="0.2s" >
+                        <img src="img/img-3.png" alt="img3" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- /Features Block 4 -->
+        <!-- Features Block 5 -->
+
+        <div class="features-block">
+            <div class="container">
+                <p class="d-sm-none mb-0">
+                    <button class="features-block__control features-block__control_5" type="button" data-toggle="collapse" data-target="#featuresBlock_5" aria-expanded="false" >
+                        <span class="link-dotted">Услуги Росреестра</span>
+                    </button>
+                </p>
+                <div class="features-block-content row px-3 px-sm-0" id="featuresBlock_5">
+                    <div class="features-block__img d-none d-md-block col-md-4 pl-md-4 wow fadeInUp" data-wow-delay="0.2s" >
+                        <img src="img/img-4.png" alt="img4" class="img-fluid">
+                    </div>
+                    <div class="features-block__text col-md-8 pl-md-5 wow fadeInUp" >
+                        <h3 class="block-heading features-block__heading d-none d-sm-block">Услуги Росреестра</h3>
+                        <p class="features-block__desc">
+                            В поисковой строке укажите Код платежа, который был отправлен вам 
+                            на&nbsp;почтовый ящик, указанный при подаче запроса в Росреестре.
+                        </p>
+                        <h4 class="features-block__attention">нет кода?</h4>
+                        <p class="features-block__desc mb-0">
+                            Если у вас еще нет кода платежа, перейдите на сайт rosreestr.ru
+                             и сформируйте запрос на оплату электронных услуг Росреестра.
+                        </p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- /Features Block 5 -->
+        
+    </section>
+
+    <section class="partners">
+        <div class="container">
+            <h3 class="block-heading text-center mb-0 wow fadeInRight" >С нами работают</h3>
+            <div class="row px-3 px-sm-0">
+
+                <div class="partner col-6 col-md-4 col-lg-2 wow fadeInLeft" data-wow-delay="0.6s" >
+                    <div class="partner__logo">
+                        <img src="img/partner-1.png" alt="partner-1" class="img">
+                    </div>
+                    <div class="partner__text">
+                        <p class="partner__name">Партнер 1</p>
+                    </div>
+                </div>
+
+                <div class="partner col-6 col-md-4 col-lg-2 wow fadeInLeft" data-wow-delay="0.5s" >
+                    <div class="partner__logo">
+                        <img src="img/partner-2.png" alt="partner-2" class="img">
+                    </div>
+                    <div class="partner__text">
+                        <p class="partner__name">Компания-партнер с длинным названием</p>
+                    </div>
+                </div>
+                
+                <div class="partner col-6 col-md-4 col-lg-2 wow fadeInLeft" data-wow-delay="0.4s" >
+                    <div class="partner__logo">
+                        <img src="img/partner-3.png" alt="partner-3" class="img">
+                    </div>
+                    <div class="partner__text">
+                        <p class="partner__name">Партнер 3</p>
+                    </div>
+                </div>
+
+                <div class="partner col-6 col-md-4 col-lg-2 wow fadeInLeft" data-wow-delay="0.3s" >
+                    <div class="partner__logo">
+                        <img src="img/partner-4.png" alt="partner-4" class="img">
+                    </div>
+                    <div class="partner__text">
+                        <p class="partner__name">Название партнера 4</p>
+                    </div>
+                </div>
+
+                <div class="partner col-6 col-md-4 col-lg-2 mb-0 wow fadeInLeft" data-wow-delay="0.2s" >
+                    <div class="partner__logo">
+                        <img src="img/partner-5.png" alt="partner-5" class="img">
+                    </div>
+                    <div class="partner__text">
+                        <p class="partner__name">Компания-партнер 5</p>
+                    </div>
+                </div>
+
+                <div class="partner col-6 col-md-4 col-lg-2 mb-0 wow fadeInLeft" data-wow-delay="0.1s" >
+                    <div class="partner__logo">
+                        <img src="img/partner-6.png" alt="partner-6" class="img">
+                    </div>
+                    <div class="partner__text">
+                        <p class="partner__name">Партнер 6 с длинным названием</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-color_my_gray">
+        <div class="footer wow zoomIn" data-wow-offset="50">
+            <div class="container-fluid d-flex justify-content-center justify-content-lg-between flex-wrap">               
+
+                <!-- Footer Block Left -->
+
+                <div class="footer-left d-flex flex-column align-items-center align-items-lg-start justify-content-sm-between">
+                    <p class="footer__text text-center text-sm-left mb-0 mb-sm-3">
+                        <span class="d-inline d-sm-block mr-1 text-center text-lg-left">© 2012–2018</span>
+                        ООО&nbsp;«Название компании»
+                    </p>
+                    <p class="footer__text text-center d-sm-none">
+                        Дополнительные ссылки и копирайты ООО «Фирма&nbsp;2»                        
+                    </p>
+                    <div class="footer__secure-logo"></div>
+                </div>
+
+                <!-- /Footer Block Left -->
+                <!-- Footer Block Center -->
+
+                <div class="footer-center d-none d-sm-flex">
+                    <div class="footer-center__links">
+                        <ul class="list-unstyled m-0">
+                            <li class="footer-center__link text-center text-lg-left">
+                                <a href="#" class=" link-underline">О сервисе</a>
+                            </li>
+                            <li class="footer-center__link text-center text-lg-left">
+                                <a href="#" class=" link-underline">Способы оплаты</a>
+                            </li>
+                            <li class="footer-center__link text-center text-lg-left">
+                                <a href="#" class=" link-underline">Как это работает</a>
+                            </li>
+                            <li class="footer-center__link text-center text-lg-left">
+                                <a href="#" class=" link-underline">Партнёрам</a>
+                            </li>
+                            <li class="footer-center__link text-center text-lg-left">
+                                <a href="#" class=" link-underline">Статьи и новости</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-center__contacts">
+                        <ul class="list-unstyled m-0">
+                            <li class="footer-center__tel text-center text-lg-left">
+                                <a href="#" class="link-underline">
+                                    8 800 123 4567
+                                </a>
+                                <p class="footer-center__info">звонок по России бесплатный</p>
+                            </li>
+                            <li class="footer-center__link text-center text-lg-left">
+                                <a href="#" class="link-underline">Обратная связь</a>
+                            </li>
+                            <li class="footer-center__link text-center text-lg-left">
+                                <a href="#" class="link-underline">Мы вКонтакте</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- /Footer Block Center -->
+                <!-- Footer Block Right -->
+                
+                <div class="footer-right d-none d-sm-block text-center text-lg-right">
+                    <p class="footer__text">
+                        Дополнительные ссылки и&nbsp;копирайты ООО&nbsp;«Фирма&nbsp;2»
+                    </p>
+                    <div class="footer__second-logo mx-auto mr-lg-0 ml-lg-auto"></div>
+                </div>
+
+                <!-- /Footer Block Right -->
+               
+            </div>
+        </div>
+    </footer>
+
+     <!-- Social Links -->
+
+     <div class="social">
+        <div class="btn-group dropup">
+            <button type="button" class="social__btn btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            </button>
+            <div class="social__links dropdown-menu dropdown-menu-right p-1">
+                <div class="ya-share2 text-center" data-services="collections,vkontakte,facebook,odnoklassniki,moimir"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Social Links -->
+
+    <a href="#top" class="btn-up"></a>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+    <script src="https://yastatic.net/share2/share.js"></script>
+    <script src="js/transpiledMain.js"></script>
+    <script>
+        new WOW( {mobile: false, offset: 150} ).init();
+    </script>
+    <script>
+
+        document.onload = (function() {
+            var myActions = new CustomActions();
+            
+                myActions.toggleVisibility('btn-up', 400);
+                myActions.toggleClass('features-block-content', 'collapse', 576);
+                myActions.smoothScroll('features-head__link', 1000, - 50);
+                myActions.smoothScroll('btn-up', 1000);
+                myActions.smoothScroll('menu-item', 1000);
+        })();
+    
+    </script>
+</body>
+</html>

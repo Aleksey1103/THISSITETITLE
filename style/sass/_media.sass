@@ -1,0 +1,141 @@
+@media (max-width: 1280px)
+    .social
+        left: 92%
+    
+@media (max-width: 992px)
+    .footer
+        &-left, &-right
+            flex-basis: 50%
+            max-width: 310px
+
+        &-left
+            order: 2
+        &-center
+            justify-content: space-around
+            flex-basis: 100%
+            max-width: 620px
+            order: 1
+            margin-bottom: 20px
+            &__links
+                margin-right: 0
+            &__contacts
+                margin-right: 0
+        &-right
+            order: 3
+
+@media (max-width: 768px)
+    .section-heading
+        font-size: 30px
+
+    .header
+        .menu-wrapper
+            padding: 10px 0 15px
+
+    .banner
+        padding: 64px 0 72px
+
+    .features
+        &-block
+            padding: 40px 0
+            &_main
+                padding-bottom: 0
+            &_special
+                padding-top: 0
+
+    .partners
+        padding: 40px 0
+
+    .social
+        top: 350px
+
+@media (max-width: 576px)
+    html
+        font-size: 12px
+
+    .section-heading,
+    .block-heading
+        font-size: 21px
+
+    .block-heading
+        letter-spacing: -2px
+
+    .modal-content
+        padding: 40px 20px 20px
+        .close
+            top: 10px
+            right: 20px
+            width: 25px
+            height: 25px
+            &::after,
+            &::before
+                background-color: #000
+        .btn
+            height: 48px
+
+
+    .header
+        padding: 5px 18px 5px 12px
+        .logo
+            height: 30px
+            svg
+                width: 197px        
+        .icon-burger
+            width: 19px
+            height: 15px
+        .menu-wrapper
+            padding: 9px
+
+    .common-input
+        height: 48px
+        font-size: 15px
+        &::placeholder
+            font-size: 15px
+
+    .banner
+        margin-top: 40px
+        padding: 44px 0 74px
+        &__heading
+            margin-bottom: 21px
+        &__section-heading
+            margin-bottom: 21px
+        .common-input
+            padding-right: 48px
+
+    .features
+        &-head
+            padding: 31px 0 14px
+        &-block
+            padding: 9px 0
+            &_main                
+                border-bottom: 1px solid $blockBorderColor
+            &__text
+                margin: 7px 0 22px
+            &__desc
+                line-height: 1.4
+            &__attention
+                margin-top: 40px
+    .partners
+        padding: 30px 0 35px
+        .partner
+            margin-top: 14px
+            margin-bottom: 14px
+    
+    .footer
+        padding: 18px 12px 14px
+        &-left
+            flex-basis: 100%
+        &__text
+            font-size: 13px
+            line-height: 1.4
+
+    .social
+        top: unset
+        left: unset
+        bottom: 18px
+        right: 14px
+
+@media (max-width: 350px)
+    .features
+        &-block
+            &__control
+                font-size: 16px
