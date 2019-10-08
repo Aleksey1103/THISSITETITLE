@@ -86,28 +86,3 @@ class CustomActions {
     }
   }
 }
-
-
-// togglePosition(togglingElemClass, triggerId, offset) {
-
-//     let elems = document.getElementsByClassName(togglingElemClass);
-
-//     const toggleTo = function() {
-//         let currentOffset = window.pageYOffset,
-//             startPos = document.getElementById(triggerId).offsetTop - offset;
-
-//         if (currentOffset >= startPos) {
-//             for ( let i = 0; i < elems.length; i++ ) {
-//                 elems[i].style.position = "fixed";
-//             }
-//         } else {
-//             for ( let i = 0; i < elems.length; i++ ) {
-//                 elems[i].style.position = "absolute";
-//             }
-//         }
-//     };
-
-//     document.addEventListener("scroll", toggleTo);
-// }
-
-

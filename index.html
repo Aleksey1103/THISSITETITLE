@@ -4,22 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" href="../img/favicons/favicon.ico" type="image/x-icon">
-    <link rel="icon" sizes="16x16" href="../img/favicons/favicon-16x16.png" type="image/png">
-    <link rel="icon" sizes="32x32" href="../img/favicons/favicon-32x32.png" type="image/png">
-    <link rel="apple-touch-icon-precomposed" href="../img/favicons/apple-touch-icon-precomposed.png">
-    <link rel="apple-touch-icon" href="../img/favicons/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="57x57" href="../img/favicons/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="../img/favicons/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="../img/favicons/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="../img/favicons/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="../img/favicons/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="../img/favicons/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="../img/favicons/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="../img/favicons/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="167x167" href="../img/favicons/apple-touch-icon-167x167.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicons/apple-touch-icon-180x180.png">
-    <link rel="apple-touch-icon" sizes="1024x1024" href="../img/favicons/apple-touch-icon-1024x1024.png">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+    <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="style/css/bootstrap.min.css">
     <link rel="stylesheet" href="style/css/animate.css">
@@ -30,7 +30,7 @@
 
     <!-- Modal Window -->
 
-    <div class="modal fade" id="modalWindow" tabindex="-1" role="dialog" 
+    <div class="modal px-0 fade" id="modalWindow" tabindex="-1" role="dialog" 
          aria-hidden="true">
 
         <div class="modal-dialog" role="document">
@@ -41,8 +41,14 @@
                    <input class="common-input" type="text" placeholder="Логин">
                    <input class="common-input" type="password" placeholder="Пароль">
                    <input class="btn btn-height60 btn-color_my_red rounded-0" type="submit" value="Войти">
-                   <a class="link-dotted modal-content__link" href="#">Забыли пароль?</a>
-                   <a class="link-dotted modal-content__link" href="#">Регистрация</a>
+                   <ul class="list-unstyled mb-0">
+                       <li>
+                           <a class="link-dotted modal-content__link" href="#">Забыли пароль?</a>
+                       </li>
+                       <li>
+                           <a class="link-dotted modal-content__link" href="#">Регистрация</a>
+                       </li>
+                   </ul>
                </form>
            </div>
         </div>
@@ -267,7 +273,7 @@
                     <div class="features-block__text col-md-8 pl-md-4 wow fadeInUp">
                         <h3 class="block-heading features-block__heading d-none d-sm-block">Штрафы ГИБДД</h3>
                         <p class="features-block__desc">
-                            Для поиска укажите номера водительского удостоверения и свидетельства 
+                            Для поиска укажите номера водительско&shy;го удостоверения и свидетельства 
                             о регистрации ТС или номер штрафа.
                         </p>
                         <p class="features-block__desc">
@@ -551,13 +557,9 @@
 
      <!-- Social Links -->
 
-     <div class="social">
-        <div class="btn-group dropup">
-            <button type="button" class="social__btn btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            </button>
-            <div class="social__links dropdown-menu dropdown-menu-right p-1">
-                <div class="ya-share2 text-center" data-services="collections,vkontakte,facebook,odnoklassniki,moimir"></div>
-            </div>
+     <div class="social">        
+        <div class="ya-share2 text-center" data-popup-direction="top"
+            data-limit="0" data-services="collections,vkontakte,facebook,odnoklassniki,moimir">
         </div>
     </div>
 
@@ -578,15 +580,16 @@
     <script>
 
         document.onload = (function() {
+            var headerHeight = document.getElementsByTagName('header')[0].offsetHeight;
             var myActions = new CustomActions();
             
                 myActions.toggleVisibility('btn-up', 400);
-                myActions.toggleClass('features-block-content', 'collapse', 576);
-                myActions.smoothScroll('features-head__link', 1000, - 50);
+                myActions.toggleClass('features-block-content', 'collapse', 575);
+                myActions.smoothScroll('features-head__link', 1000, - (headerHeight + 50));
                 myActions.smoothScroll('btn-up', 1000);
-                myActions.smoothScroll('menu-item', 1000);
+                myActions.smoothScroll('menu-item', 500, - headerHeight) ;
         })();
-    
+
     </script>
 </body>
 </html>
